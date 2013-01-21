@@ -2,7 +2,7 @@ package Task::Catmandu;
 
 use strict;
 use 5.008_001;
-our $VERSION = '0.01';
+our $VERSION = '0.0101';
 use ExtUtils::MakeMaker;
 
 sub dependencies {

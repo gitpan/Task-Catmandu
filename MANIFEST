@@ -13,13 +13,9 @@ inc/Module/Install/Repository.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Task/Catmandu.pm
+LICENSE
 Makefile.PL
 MANIFEST			This list of files
 README
 t/00_compile.t
-Task-Catmandu-0.01.tar.gz
 versions.pl
-xt/perlcritic.t
-xt/pod.t
-xt/podspell.t
-xt/synopsis.t
