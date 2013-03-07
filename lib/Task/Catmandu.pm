@@ -2,7 +2,7 @@ package Task::Catmandu;
 
 use strict;
 use 5.008_001;
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 use ExtUtils::MakeMaker;
 
 sub dependencies {
@@ -16,19 +16,31 @@ sub dependencies {
         'ElasticSearch store', 1, [
             [ 'Catmandu::Store::ElasticSearch' ],
         ],
-        'Solr store', 0, [
+        'Solr store', 1, [
             [ 'Catmandu::Store::Solr' ],
+        ],
+        'FedoraCommons store', 1, [
+            [ 'Catmandu::FedoraCommons' ],
         ],
         'MARC importer and MARC fixes', 1, [
             [ 'Catmandu::MARC' ],
         ],
-        'bibliographic importers', 0, [
+        'bibliographic importers', 1, [
             [ 'Catmandu::PubMed' ],
             [ 'Catmandu::ArXiv' ],
             [ 'Catmandu::PLoS' ],
         ],
+        'OAI importer', 1, [
+            [ 'Catmandu::OAI' ],
+        ],
+        'SRU importer', 1, [
+            [ 'Catmandu::SRU' ],
+        ],
         'Z39.50 importer', 0, [
             [ 'Catmandu::Z3950' ],
+        ],
+        'Twitter importer', 0, [
+            [ 'Catmandu::Importer::Twitter' ],
         ],
         'LDAP importer', 0, [
             [ 'Catmandu::LDAP' ],
