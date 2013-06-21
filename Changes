@@ -1,5 +1,8 @@
 Revision history for Perl extension Task::Catmandu
 
+0.0201
+        - include Atom, XLS, BibTeX, Store::DBI
+
 0.02
         - keep it simple
 
