@@ -29,7 +29,7 @@ my @features = (
     [ 'DBI store', 1,
       ['Catmandu::Store::DBI'],
     ],
-    [ 'FedoraCommons store', 1,
+    [ 'FedoraCommons store', 0,
       ['Catmandu::FedoraCommons'],
     ],
     # importers

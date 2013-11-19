@@ -23,7 +23,7 @@ feature 'Solr store', -default => 1,
 feature 'DBI store', -default => 1,
 'Catmandu::Store::DBI', '0.02',
 ;
-feature 'FedoraCommons store', -default => 1,
+feature 'FedoraCommons store', -default => 0,
 'Catmandu::FedoraCommons', '0.24',
 ;
 feature 'MARC importer, exporter and fixes', -default => 1,
