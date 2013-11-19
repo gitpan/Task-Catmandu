@@ -1,5 +1,8 @@
 Revision history for Perl extension Task::Catmandu
 
+0.1
+        - Makefile.PL generator
+
 0.0201
         - include Atom, XLS, BibTeX, Store::DBI
 

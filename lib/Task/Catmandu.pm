@@ -3,7 +3,7 @@ package Task::Catmandu;
 use strict;
 use warnings;
 
-our $VERSION = '0.0201';
+our $VERSION = '0.1';
 
 1;
 

@@ -6,69 +6,66 @@ readme_from 'lib/Task/Catmandu.pm';
 license 'perl';
 
 feature 'repl (interactive environment)', -default => 1,
-  'Catmandu::Cmd::repl', '0.01',
+'Catmandu::Cmd::repl', '0.01',
 ;
-# stores
 feature 'MongoDB store', -default => 1,
-  'Catmandu::Store::MongoDB', '0.0301',
+'Catmandu::Store::MongoDB', '0.0301',
 ;
 feature 'CouchDB store', -default => 1,
-  'Catmandu::Store::CouchDB', '0.01'
+'Catmandu::Store::CouchDB', '0.01',
 ;
 feature 'ElasticSearch store', -default => 1,
-  'Catmandu::Store::ElasticSearch', '0.0202',
+'Catmandu::Store::ElasticSearch', '0.0203',
 ;
 feature 'Solr store', -default => 1,
-  'Catmandu::Store::Solr', '0.0201',
+'Catmandu::Store::Solr', '0.0203',
 ;
 feature 'DBI store', -default => 1,
-  'Catmandu::Store::DBI', '0.02'
+'Catmandu::Store::DBI', '0.02',
 ;
 feature 'FedoraCommons store', -default => 1,
-  'Catmandu::FedoraCommons', '0.24',
+'Catmandu::FedoraCommons', '0.24',
 ;
-# importers
 feature 'MARC importer, exporter and fixes', -default => 1,
-  'Catmandu::MARC', '0.0304',
+'Catmandu::MARC', '0.09',
 ;
 feature 'bibliographic importers', -default => 1,
-  'Catmandu::PubMed', '0.01',
-  'Catmandu::ArXiv', '0.01',
-  'Catmandu::PLoS', '0.01',
-  'Catmandu::Inspire', '0.01',
+'Catmandu::PubMed', '0.01',
+'Catmandu::ArXiv', '0.01',
+'Catmandu::PLoS', '0.01',
+'Catmandu::Inspire', '0.2',
 ;
 feature 'Atom importer and exporter', -default => 1,
-  'Catmandu::Atom', '0.02',
+'Catmandu::Atom', '0.02',
 ;
 feature 'OAI importer', -default => 1,
-  'Catmandu::OAI', '0.02',
+'Catmandu::OAI', '0.02',
 ;
 feature 'SRU importer', -default => 1,
-  'Catmandu::SRU', '0.0101',
+'Catmandu::SRU', '0.0101',
 ;
-feature 'Z39.50 importer', -default => 1,
-  'Catmandu::Z3950', '0.03',
+feature 'Z39.50 importer', -default => 0,
+'Catmandu::Z3950', '0.04',
 ;
 feature 'Twitter importer', -default => 1,
-  'Catmandu::Importer::Twitter', '0.02',
+'Catmandu::Importer::Twitter', '0.03',
 ;
 feature 'LDAP importer', -default => 1,
-  'Catmandu::LDAP', '0.0103',
+'Catmandu::LDAP', '0.0103',
 ;
-# exporters
-feature 'BibTeX exporter' -default => 1,
-  'Catmandu::BibTeX', '0.02',
-; 
+feature 'BibTeX exporter', -default => 1,
+'Catmandu::BibTeX', '0.03',
+;
 feature 'XLS exporter', -default => 1,
-  'Catmandu::XLS', '0.02',
+'Catmandu::XLS', '0.03',
 ;
-# dancer integration
 feature 'Dancer integration', -default => 0,
-  'Dancer::Session::Catmandu', '0.02',
-  'Dancer::Plugin::Catmandu::OAI', '0.0302',
-  'Dancer::Plugin::Catmandu::SRU', '0.02',
+'Dancer::Session::Catmandu', '0.02',
+'Dancer::Plugin::Catmandu::OAI', '0.0302',
+'Dancer::Plugin::Catmandu::SRU', '0.02',
 ;
 
 auto_install;
 auto_set_repository;
 WriteAll;
+
