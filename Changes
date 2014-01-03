@@ -1,5 +1,8 @@
 Revision history for Perl extension Task::Catmandu
 
+0.102
+        - bump versions
+
 0.101
         - Catmandu::FedoraCommons not default
 

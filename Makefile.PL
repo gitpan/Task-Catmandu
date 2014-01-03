@@ -15,7 +15,7 @@ feature 'CouchDB store', -default => 1,
 'Catmandu::Store::CouchDB', '0.01',
 ;
 feature 'ElasticSearch store', -default => 1,
-'Catmandu::Store::ElasticSearch', '0.0203',
+'Catmandu::Store::ElasticSearch', '0.0204',
 ;
 feature 'Solr store', -default => 1,
 'Catmandu::Store::Solr', '0.0203',
@@ -24,16 +24,16 @@ feature 'DBI store', -default => 1,
 'Catmandu::Store::DBI', '0.02',
 ;
 feature 'FedoraCommons store', -default => 0,
-'Catmandu::FedoraCommons', '0.24',
+'Catmandu::FedoraCommons', '0.27',
 ;
 feature 'MARC importer, exporter and fixes', -default => 1,
-'Catmandu::MARC', '0.09',
+'Catmandu::MARC', '0.104',
 ;
 feature 'bibliographic importers', -default => 1,
 'Catmandu::PubMed', '0.01',
 'Catmandu::ArXiv', '0.01',
 'Catmandu::PLoS', '0.01',
-'Catmandu::Inspire', '0.2',
+'Catmandu::Inspire', '0',
 ;
 feature 'Atom importer and exporter', -default => 1,
 'Catmandu::Atom', '0.02',
