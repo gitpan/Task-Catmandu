@@ -1,0 +1,115 @@
+---
+abstract: 'Catmandu bundle'
+author:
+  - 'Nicolas Steenlant <nicolas.steenlant@ugent.be>'
+build_requires: {}
+configure_requires:
+  Module::Build::Tiny: '0.039'
+dynamic_config: 0
+generated_by: 'Dist::Milla version v1.0.5, Dist::Zilla version 5.017, CPAN::Meta::Converter version 2.142690'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Task-Catmandu
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+optional_features:
+  activiti:
+    description: Activiti
+    requires:
+      Catmandu::Activiti: '0.11'
+  alephx:
+    description: 'Aleph-X services'
+    requires:
+      Catmandu::AlephX: '1.065'
+  bibliographic_databases:
+    description: 'Bibliographic importers'
+    requires:
+      Catmandu::ArXiv: '0.021'
+      Catmandu::CrossRef: '0.006'
+      Catmandu::Inspire: '0.265'
+      Catmandu::OCLC: '0.005'
+      Catmandu::PLoS: '0.01'
+      Catmandu::PubMed: '0.01'
+  cpan:
+    description: 'Perl recent releases'
+    requires:
+      Catmandu::Importer::CPAN: '0.03'
+  dancer:
+    description: 'Dancer integration'
+    requires:
+      Dancer::Plugin::Catmandu::OAI: '0.0305'
+      Dancer::Plugin::Catmandu::SRU: '0.03'
+      Dancer::Session::Catmandu: '0.02'
+  databases:
+    description: Databases
+    requires:
+      Catmandu::Store::CouchDB: '0.01'
+      Catmandu::Store::DBI: '0.012'
+      Catmandu::Store::MongoDB: '0.0303'
+  europmc:
+    description: EuroPMC
+    requires:
+      Catmandu::EuropePMC: '0.15'
+  fedora:
+    description: 'FedoraCommons store'
+    requires:
+      Catmandu::FedoraCommons: '0.271'
+  mediamosa:
+    description: MediaMosa
+    requires:
+      Catmandu::MediaMosa: '0.279'
+  psgi:
+    description: 'PSGI integration'
+    requires:
+      Plack::Session::Store::Catmandu: '0.02'
+  search_servers:
+    description: 'Search servers'
+    requires:
+      Catmandu::Store::ElasticSearch: '0.0206'
+      Catmandu::Store::Lucy: '0.0101'
+      Catmandu::Store::Solr: '0.0204'
+  z3950:
+    description: 'Z39.50 importer'
+    requires:
+      Catmandu::Z3950: '0.04'
+requires:
+  Catmandu: '0.9206'
+  Catmandu::Atom: '0.02'
+  Catmandu::BibTeX: '0.06'
+  Catmandu::Cmd::repl: '0.01'
+  Catmandu::Exporter::Table: v0.2.1
+  Catmandu::Exporter::Template: '0.05'
+  Catmandu::Fix::Date: '0.0121'
+  Catmandu::Fix::cmd: '0.0201'
+  Catmandu::Fix::get_json: '0.40'
+  Catmandu::Importer::Twitter: '0.03'
+  Catmandu::LDAP: '0.0103'
+  Catmandu::MAB2: '0.07'
+  Catmandu::MARC: '0.205'
+  Catmandu::MODS: '0.2'
+  Catmandu::OAI: '0.06'
+  Catmandu::PICA: '0.15'
+  Catmandu::RDF: '0.18'
+  Catmandu::SRU: '0.037'
+  Catmandu::Serializer::storable: '0.0102'
+  Catmandu::Store::CHI: '0.02'
+  Catmandu::Validator::JSONSchema: '0.1'
+  Catmandu::Wikidata: '0.06'
+  Catmandu::XLS: '0.04'
+  Catmandu::XML: '0.14'
+resources:
+  bugtracker: https://github.com/LibreCat/Task-Catmandu/issues
+  homepage: https://github.com/LibreCat/Task-Catmandu
+  repository: https://github.com/LibreCat/Task-Catmandu.git
+version: '0.104'
+x_contributors:
+  - 'Jakob Voss <voss@gbv.de>'
+  - 'vpeil <vitali.peil@uni-bielefeld.de>'

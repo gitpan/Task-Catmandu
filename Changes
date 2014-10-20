@@ -1,5 +1,11 @@
 Revision history for Perl extension Task::Catmandu
 
+0.104  2014-10-20 11:12:28 CEST
+        - migrate to Milla and update
+
+0.103
+        - bump versions
+
 0.102
         - bump versions
 

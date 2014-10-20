@@ -4,9 +4,14 @@ NAME
 SYNOPSIS
       cpanm --interactive Task::Catmandu
 
-AUTHOR
-      Nicolas Steenlant <nicolas.steenlant@ugent.be>
+      # Update cpanfile to most recent versions
+      > perl -MTask::Catmandu -e cpanfile > cpanfile
 
+AUTHOR
+    Nicolas Steenlant <nicolas.steenlant@ugent.be>
+
+CONTRIBUTORS
+    Jakob Voss <jakob.voss@gbv.de>
 
 LICENSE
     This library is free software; you can redistribute it and/or modify it
@@ -15,6 +20,5 @@ LICENSE
 SEE ALSO
     <http://librecat.org/>
 
-ACKNOWLEDGEMENTS
-    Module code is taken from Task::Plack.
+    The main code of this module is taken from Task::Plack.
 
